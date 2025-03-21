@@ -192,7 +192,35 @@ const obstypes = {
     "Survey": {
         "tooltip": "Survey field imaging",
         "category": "Science",
-    }
+    },
+    "First Photon": {
+        "tooltip": "first photon",
+        "category": "Science",
+    },
+    "Telescope Offsets": {
+        "tooltip": "telescope offsets",
+        "category": "AOS transient",
+    },
+    "Loop (CLT-001)": {
+        "tooltip": "Incremental loop",
+        "category": "AOS transient",
+    },
+    "M1M3 Thermal": {
+        "tooltip": "M1M3 thermal tests",
+        "category": "Calibration",
+    },
+    "Stray Light": {
+        "tooltip": "stray light",
+        "category": "Calibration",
+    },
+    "First Look": {
+        "tooltip": "first look",
+        "category": "Science",
+    },
+    "Survey-mode Loop (CLT-XXX)": {
+        "tooltip": "survey-mode loop",
+        "category": "AOS Transient",
+    },
 }
 
 Object.values(obstypes).forEach(type => {
