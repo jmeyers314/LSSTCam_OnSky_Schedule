@@ -23,10 +23,10 @@ const g = svg.append("g")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
 // x-axis
-//  Time range for x-axis.  17:30 to 08:00
+//  Time range for x-axis.  12:00 to 08:30
 //  Use seconds from midnight.
-const minTime = -6.5*3600;
-const maxTime = 8.0*3600;
+const minTime = -12*3600;
+const maxTime = 8.5*3600;
 const timeScale = d3.scaleLinear()
     .domain([minTime, maxTime])
     .range([0, width]);
