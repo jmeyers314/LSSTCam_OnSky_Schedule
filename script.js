@@ -25,15 +25,15 @@ const g = svg.append("g")
 // x-axis
 //  Time range for x-axis.  12:00 to 08:30
 //  Use seconds from midnight.
-const minTime = -12*3600;
+const minTime = -5*3600;
 const maxTime = 8.5*3600;
 const timeScale = d3.scaleLinear()
     .domain([minTime, maxTime])
     .range([0, width]);
 
 // y-axis
-let dateStart = new Date("2025-04-18");
-let dateEnd = new Date("2025-06-01");
+let dateStart = new Date("2025-10-19");
+let dateEnd = new Date("2025-11-03");
 let dateRange = d3.timeDay.range(dateStart, dateEnd);
 let dates = dateRange.map(d => d.toISOString().split("T")[0]);
 let dateScale = d3.scaleBand()
